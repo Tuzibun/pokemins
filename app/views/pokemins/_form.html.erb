@@ -1,0 +1,17 @@
+<% if @pokemin.errors.any? %>
+	<% question.errors.full_messages.each do |error| %>
+	<li><%= error %></li>
+	<% end %>
+<% end %>
+
+<%= form_for @pokemin do |f| %>
+	<p><%= f.label :name %>
+	<%= f.text_field :name %></p>
+	<p><%= f.label :power %>
+	<%= f.text_field :power %></p>
+	<p><%= f.label :photo %>
+	<%= f.text_field :photo %></p>
+	<p><%= f.submit %></p>
+<% end %>
+
+

@@ -1,0 +1,10 @@
+<h1><img src="http://vignette1.wikia.nocookie.net/es.pokemon/images/6/61/Logo_de_Pok%C3%A9mon_(EN).png/revision/latest?cb=20080826125348"/></h1>
+
+<h2> These are all the Pokemins! </h2>
+
+<ul>
+	<% @pokemins.each do |pokemin| %>
+	<li><%= link_to pokemin.name, pokemin_path(pokemin) %></li>
+
+	<% end %>
+</ul>

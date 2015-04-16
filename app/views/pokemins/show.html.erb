@@ -1,0 +1,6 @@
+<h2><%= @pokemin.name %>
+<p><%= image_tag @pokemin.photo %></p></h2>
+
+<h1><%= image_tag "http://newfadzoo.com/wp-content/uploads/2012/02/grass-divider.jpg" %></h1>
+<p><%= link_to "Edit this Pokemin", edit_pokemin_path(@pokemin) %>
+<%= link_to "Capture this Pokemin", pokemin_path(@pokemin), method: :delete, data: {confirm: "Are you sure you want to capture this Pokemin?"} %></p>

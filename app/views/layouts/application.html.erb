@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pokemins</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= yield %>
+
+<h1><%= image_tag "http://newfadzoo.com/wp-content/uploads/2012/02/grass-divider.jpg" %></h1>
+ <p><%= link_to "Hatch a new Pokemin", new_pokemin_path %>  <%= link_to "Back to PokeLand", pokemins_path %></p>
+
+</body>
+</html>
