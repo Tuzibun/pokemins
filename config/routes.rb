@@ -6,6 +6,9 @@ Rails.application.routes.draw do
   root 'pokemins#index'
   resources :pokemins
 
+  resources :users
+  get '/signup', to: 'users#new'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
